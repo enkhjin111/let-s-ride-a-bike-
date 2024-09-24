@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">   
+        <title></title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>let's ride a bike!</title>
+    <style>
+      body{
+        background-size: cover;
+        background-image: url("road.jpeg"); margin: 0} 
+        .bt{display: none;}
+        p{color: black;}
+        #pp{position: absolute; font-size: 8rem; left: 40%;
+        }
+        
+
+        .audio-buttons {
+          position: fixed;
+          top: 20px;
+          width: 100%;
+          text-align: center;
+          font-size: 60px;
+          gap: 15px;
+        }
+
+        .top-text {
+          position: fixed;
+          top: 100px;
+          width: 100%;
+          text-align: center;
+          font-size: 70px;
+          font-weight: bold;
+          color: black;
+          font-family: 'Copperplate', 'Papyrus'; 
+        }
+
+        </style>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+        <p> click the buttons to make some sound! </p>
+</div>
+<div class="top-text"> LET'S RIDE A BIKE! </div>
+<div class="bicycle">
+      <div class="wheel front-wheel"></div>
+      <div class="front-fork">
+        <div class="tube"></div>
+      </div>
+      <div class="handlebars"></div>
+      <div class="crossbar"></div>
+      <div class="frame-1"></div>
+      <div class="frame-2"></div>
+      <div class="seat-tube">
+        <div class="seat"></div>
+      </div>
+      <div class="crank"></div>
+      <div class="chain"></div>
+      <div class="pedals"></div>
+      <div class="back-fork"></div>
+      <div class="wheel back-wheel"></div>
+
+<div class="audio-buttons">
+        <button id="bellBut">bell</button>
+        <audio id="bellSound" src="bell.wav"></audio>
+        <button id="bicycleBut">bicycle</button>
+        <audio id="bicycleSound" src="bicycle.flac"></audio>
+        <button id="natureBut">nature</button>
+        <audio id="natureSound" src="nature.wav"></audio>
+        <button id="songBut">song</button>
+        <audio id="songSound" src="song.wav"></audio>
+        <button id="stopBut">stop</button>
+</div>
+
+        <script type="text/javascript">
+                bellBut.onclick =function(){
+                       bellSound.play();
+                }
+                bicycleBut.onclick =function(){
+                       bicycleSound.play();
+                }
+                natureBut.onclick =function(){
+                        natureSound.play();
+                }
+                songBut.onclick =function(){
+                        songSound.play();
+                }
+                stopBut.onclick = function(){
+                        bellSound.pause();
+                        bicycleSound.pause();
+                       natureSound.pause();
+                        songSound.pause();
+                }
+        </script>
+</body>
+</html>
